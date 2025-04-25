@@ -26,6 +26,7 @@ class BibleScreen extends StatefulWidget {
   _BibleScreenState createState() => _BibleScreenState();
 }
 
+//displaying screen num 1.
 class _BibleScreenState extends State<BibleScreen> {
   List<BibleBook> books = [];
   int selectedAb = 1; // 1: 구약, 2: 신약
@@ -36,13 +37,16 @@ class _BibleScreenState extends State<BibleScreen> {
   int _selectedIndex = 0; // 현재 선택된 탭의 인덱스
   bool _isLoading = true; // 로딩 상태 추가
   final List<double> _fontSizes = [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]; // 폰트 크기 옵션
-  // 하이라이트 색상 옵션 (선택 가능하도록 Map으로 변경)
+  
+  // 하이라이트 색상 옵션 (선택 가능하도록 Map으로 변경) -> how about change it from mapping to dropdown?
+  //TODO -> changing name of color from hex code to string.
   final Map<String, Color> _highlightColors = {
     'F1B840': const Color(0xFFF1B840),
     'F592BB': const Color(0xFFF592BB),
     'B4B4B4': const Color(0xFFB4B4B4),
     '7878E1': const Color(0xFF7878E1),
   };
+  //TODO -> applying changing color to each script.
   Set<String> _selectedHighlightColors = {}; // 선택된 하이라이트 색상 저장
 
   // 폰트 크기 선택에 사용할 단어
@@ -77,7 +81,7 @@ class _BibleScreenState extends State<BibleScreen> {
     }
   }
 
-  // 즐겨찾기 업데이트 함수
+  // 즐겨찾기 업데이트 함수 -> screen num2(fav scripts screen에 update.)
   Future<void> _updateFavorite(BibleVerse verse) async {
     verse.isFavorite = !verse.isFavorite;
     await DatabaseHelper.instance.updateVerse(verse);
