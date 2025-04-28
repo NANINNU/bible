@@ -318,7 +318,7 @@ class _BibleScreenState extends State<BibleScreen> {
       context: context,
       builder: (context) {
         return AlertDialog(
-          title: const Text('하이라이트 색상 선택'),
+          title: const Text('형광펜'),
           content: StatefulBuilder(
             builder: (context, setState) {
               return SingleChildScrollView(
