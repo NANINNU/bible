@@ -8,8 +8,10 @@ the way of crolling is this url.(https://m.blog.naver.com/hiddenjgrace/222675096
 
 
 
-## Getting Started
-
+#  Process
+##  250430
+###  bible script is shown on screen.
+###  data of bible is not last update version. it will be updated.
 
 
 
@@ -58,7 +60,4 @@ the way of crolling is this url.(https://m.blog.naver.com/hiddenjgrace/222675096
 
 
 
-#  Process
-##  250430
-###  bible script is shown on screen.
-###  data of bible is not last update version. it will be updated.
+
